@@ -8,10 +8,10 @@ let foodClass = ""
 const createFoodComponent = (food) =>{
     return `
         <div class = "foodItem">
-            <h1>${id}</h1>
-            <section>${name}</section>
-            <section>${type}</section>
-            <section>${ethnicity}</section>
+            <h1>${food.id}</h1>
+            <section>${food.name}</section>
+            <section>${food.type}</section>
+            <section>${food.ethnicity}</section>
         </div>
     `
 }
@@ -24,10 +24,7 @@ let foodHTML = "";
 
 for (let i = 0; i < foods.length; i++) {
     const singleFoodHTML = createFoodComponent(
-        foods[i].name, 
-        foods[i].subject, 
-        foods[i].info, 
-        foods[i].score);
+        foods[i]);
     foodHTML += singleFoodHTML;
     console.log(foodHTML);
 }
