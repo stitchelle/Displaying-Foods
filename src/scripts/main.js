@@ -8,7 +8,7 @@ const createFoodComponent = (food) => {
         <div class = "foodItem">
             <h1>${food.id}</h1>
             <section>${food.name}</section>
-            <section>${food.type}</section>
+            <section>${food.category}</section>
             <section>${food.ethnicity}</section>
         </div>
     `
